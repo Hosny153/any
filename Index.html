@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة فلابي بيرد</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            text-align: center;
+            background-color: #70c5ce;
+        }
+
+        canvas {
+            display: block;
+            margin: auto;
+            border: 3px solid #000;
+            border-radius: 10px;
+            background: url('BG.png') no-repeat center;
+            background-size: cover;
+        }
+
+        #restartBtn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#restartBtn:hover {
+    background: darkred;
+}
+
+
+        #score {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="score">0</h1>
+    <canvas id="gameCanvas"></canvas>
+    <button id="restartBtn">إعادة التشغيل</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
